@@ -1,0 +1,56 @@
+import datetime 
+Class Animal:
+    def__init__(self, espécie, data_nascimento):
+        self.especie = espécie
+        self.data_nascimento = data_nascimento
+    def imprimir(self):
+        print(self.espécie)
+        print(self.data_nascimento)
+B1= Animal ('Bolinha', datetime.datetime.now())
+
+class AnimalDomestico(Animal):
+    def__init__(self, nome):
+        self.nome = nome
+    def imprimir(self):
+        print(self.nome)
+        print(self.espécie)
+        print(self.data_nascimento)
+    
+AM1 = AnimalDomestico('Tavinho')
+AM1.espécie = 'canário louco' 
+AM1.data_nascimento = datetime.datetime.now()
+
+class Humano(Animal):
+    def__init__(self, nome, cpf):
+        self.nom e= nome
+        self.cpf = cpf
+    def imprimir(self):
+        print(self.nome)
+        print(self.cpf)
+        print(self.espécie)
+        print(self.data_nascimento)
+
+HMN1= Humano('Yad','777.888.999-99')
+HMN1.espécie= 'Humano'
+HMN1.data_nascimento= datetime.datetime.now()
+
+class AnimalSelvagem(Animal):
+    def__init__(self, código_rastreio):
+        self.código_rastreio = código_rastreio
+    
+    def imprimir(self):
+        print(self.código_rastreio)
+        print(self.espécie)
+        print(self.data_nascimento)
+
+ANM1= AnimalSelvagem('#5567')
+AMN1.especie= 'Tavinho'
+AMN1.data_nascimento= datetime.datetime.now()
+
+AM1.imprimir()
+print('------------')
+HMN1.imprimir()
+print('----------------')
+ANM1.imprimir()
+print('------')
+ANM1.imprimir()
